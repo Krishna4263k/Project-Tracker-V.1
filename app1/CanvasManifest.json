@@ -132,6 +132,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "ProjectScreen"
+    "ProjectScreen",
+    "Screen1"
   ]
 }

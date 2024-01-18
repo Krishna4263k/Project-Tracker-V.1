@@ -1,0 +1,52 @@
+{
+  "bf5785ae-71a1-49d4-b55c-0996463d3b86": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1670/1.0.1670.3526/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://dhruvwebstack.sharepoint.com/sites/Powerapps": {
+        "dataSources": {
+          "Account": {
+            "tableName": "82e2521c-3f8c-4ca6-b819-974a79f09584"
+          },
+          "Domain": {
+            "tableName": "b5674897-0d5e-4de6-b0cd-35fc5bcd9856"
+          },
+          "MileStone": {
+            "tableName": "b664f3ec-9a64-4d46-9c3f-fc3b058698b2"
+          },
+          "Project": {
+            "tableName": "6ee4afd9-23f2-400e-b73e-0208e693ef24"
+          },
+          "TaskList": {
+            "tableName": "d13b0372-43d2-4df1-a78a-9abf2f89a13f"
+          },
+          "UserStories": {
+            "tableName": "d80686f2-43c4-40e1-8d02-e0ea73434149"
+          },
+          "VersionHistory": {
+            "tableName": "bfa6f4fd-3364-4647-a372-6751d39696e2"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Account",
+      "Domain",
+      "MileStone",
+      "Project",
+      "TaskList",
+      "UserStories",
+      "VersionHistory"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "bf5785ae-71a1-49d4-b55c-0996463d3b86"
+  }
+}

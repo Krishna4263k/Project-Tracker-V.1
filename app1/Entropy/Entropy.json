@@ -1,0 +1,67 @@
+{
+  "ComponentIndexes": {
+    "HeaderComponent": 1
+  },
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "HeaderComponent": 4,
+    "Host": 3,
+    "ProjectScreen": 5
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "01/18/2024 06:28:38",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "bf5785ae-71a1-49d4-b55c-0996463d3b86": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/bd7bd9b5f1b148afa2f3a9b10a4f86fe\""
+  },
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {
+    "7dbdd7a2cdab4749967b79d3ec2e0f74": 0
+  },
+  "OrderComponentTemplate": {
+    "7dbdd7a2cdab4749967b79d3ec2e0f74": 0
+  },
+  "OrderDataSource": {
+    "Account": 0,
+    "Domain": 1,
+    "MileStone": 2,
+    "Project": 3,
+    "TaskList": 4,
+    "UserStories": 5,
+    "VersionHistory": 6
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "HeaderComponent": {},
+    "Host": {},
+    "ProjectScreen": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PCFTemplateEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "HeaderComponent": 0,
+    "Host": 0,
+    "ProjectScreen": 0
+  },
+  "ResourcesJsonIndices": {},
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0712744,
+    "ControlCount": {
+      "7dbdd7a2cdab4749967b79d3ec2e0f74": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 1.0065963
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

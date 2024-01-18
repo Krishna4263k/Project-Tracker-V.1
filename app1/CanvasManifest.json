@@ -134,6 +134,9 @@
   "ScreenOrder": [
     "Project_Screen",
     "Project_Table_Screen",
+    "MileStone_Table_Screen",
+    "UserStories_Table_Screen",
+    "Tasks_Table_Screen",
     "TaskList_Screen",
     "UserStories_Screen",
     "Domain _Screen",

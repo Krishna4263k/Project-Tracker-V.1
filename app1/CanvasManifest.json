@@ -134,6 +134,8 @@
   "ScreenOrder": [
     "Project_Screen",
     "TaskList_Screen",
+    "Task",
+    "TaskList_Screen_1",
     "MileStone_Screen"
   ]
 }

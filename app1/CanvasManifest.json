@@ -57,7 +57,7 @@
       "exportimportcomponents2": true,
       "externalmessage": false,
       "fluentv9controls": false,
-      "fluentv9controlspreview": false,
+      "fluentv9controlspreview": true,
       "formuladataprefetch": true,
       "formularepair": false,
       "generatedebugpublishedapp": false,
@@ -133,9 +133,12 @@
   },
   "ScreenOrder": [
     "Project_Screen",
+    "Project_Table_Screen",
     "TaskList_Screen",
-    "Task",
-    "TaskList_Screen_1",
+    "UserStories_Screen",
+    "Account _Screen",
+    "Domain _Screen",
+    "Version History _Screen",
     "MileStone_Screen"
   ]
 }

@@ -1,0 +1,83 @@
+"Project_Table_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar1_7 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName1_7 As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="Project Dashboard "
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Canvas1_7 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1_7.Y + RectQuickActionBar1_7.Height
+        ZIndex: =3
+
+        DataCard1_7 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    Label1 As label:
+        Height: =0
+        Text: ="Status"
+        Width: =190
+        X: =190
+        Y: =266
+        ZIndex: =4
+
+    Label1_1 As label:
+        Text: ="Text"
+        X: =Label1.X+Label1.Width
+        Y: =226
+        ZIndex: =5
+
+    Label1_2 As label:
+        Text: =
+        X: =283
+        Y: =226
+        ZIndex: =6
+
+    Label1_3 As label:
+        Text: ="Text"
+        X: =433
+        Y: =226
+        ZIndex: =7
+
+    Label1_4 As label:
+        Text: ="Text"
+        X: =538
+        Y: =226
+        ZIndex: =8
+
+    Label1_5 As label:
+        Text: ="Text"
+        X: =631
+        Y: =226
+        ZIndex: =9
+
+    Label1_6 As label:
+        Text: ="Title"
+        X: =40
+        Y: =226
+        ZIndex: =10
+
+    Label1_7 As label:
+        Text: ="Title"
+        X: =190
+        Y: =226
+        ZIndex: =11
+

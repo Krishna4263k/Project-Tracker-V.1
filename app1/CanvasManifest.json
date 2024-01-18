@@ -132,7 +132,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "ProjectScreen",
-    "Screen1"
+    "Project_Screen",
+    "TaskList_Screen",
+    "MileStone_Screen"
   ]
 }

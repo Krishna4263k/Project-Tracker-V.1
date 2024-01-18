@@ -1,4 +1,4 @@
-"Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"Project_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     RectQuickActionBar1 As rectangle:
         Height: =88
@@ -33,6 +33,7 @@
 
     Form2 As form:
         DataSource: =Project
+        DefaultMode: =FormMode.New
         Height: =590
         Width: =1366
         Y: =88

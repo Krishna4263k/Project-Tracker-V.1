@@ -238,3 +238,11 @@
         Y: =123
         ZIndex: =14
 
+    Label2 As label:
+        Height: =92
+        Text: =
+        Width: =1322
+        X: =22
+        Y: =6
+        ZIndex: =15
+

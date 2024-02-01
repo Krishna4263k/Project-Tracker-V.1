@@ -240,6 +240,7 @@
 
     Header_2 As Header:
         Height: =110
-        Width: =1366
+        Width: =1196
+        X: =73
         ZIndex: =16
 

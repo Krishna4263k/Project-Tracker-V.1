@@ -238,7 +238,9 @@
             ZIndex: =8
 
     Header_3 As Header:
-        Height: =110
-        X: =298
+        Height: =121
+        Width: =1203
+        X: =83
+        Y: =2
         ZIndex: =14
 

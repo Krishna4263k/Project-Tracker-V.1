@@ -12,7 +12,7 @@
         Height: =88
         Text: ="Mile Stone"
         Width: =1027
-        X: =172
+        X: =169
         Y: =110
         ZIndex: =2
 
@@ -236,4 +236,9 @@
             Width: =34
             X: =1082
             ZIndex: =8
+
+    Header_3 As Header:
+        Height: =110
+        X: =298
+        ZIndex: =14
 

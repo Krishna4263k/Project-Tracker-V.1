@@ -1,14 +1,14 @@
 Header As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
-    Width: =Max(App.Height, App.MinScreenHeight)
+    Height: =671
+    Width: =1500
     X: =0
     Y: =0
     ZIndex: =1
 
     Rectangle1 As rectangle:
         Height: =127
-        Width: =768
+        Width: =1500
         ZIndex: =1
 
     Icon4 As icon.AddUser:
@@ -26,14 +26,14 @@ Header As CanvasComponent:
         Size: =20
         Text: =App.ActiveScreen.Name
         Width: =486
-        X: =Icon4.X+Icon4.Width
-        Y: =34
+        X: =464
+        Y: =36
         ZIndex: =4
 
     Image1 As image:
         Height: =127
         Image: =User().Image
         Width: =105
-        X: =647
+        X: =1382
         ZIndex: =5
 

@@ -1,6 +1,7 @@
 Header As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =Max(App.Height, App.MinScreenHeight)
+    Title: ="Text"
     Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
     Y: =0
@@ -40,10 +41,10 @@ Header As CanvasComponent:
                 FontWeight: =FontWeight.Bold
                 Height: =55
                 Size: =20
-                Text: =App.ActiveScreen.Name
+                Text: =Header.Title//App.ActiveScreen.Name
                 Width: =486
-                X: =351
-                Y: =40
+                X: =434
+                Y: =37
                 ZIndex: =3
 
             Image1 As image:

@@ -239,5 +239,6 @@
         ZIndex: =14
 
     Header_2 As Header:
+        Title: ="Project Table"
         ZIndex: =15
 

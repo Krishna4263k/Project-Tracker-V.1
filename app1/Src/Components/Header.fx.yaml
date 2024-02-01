@@ -8,7 +8,7 @@ Header As CanvasComponent:
 
     Container1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(39, 113, 194, 1)
-        Height: =155
+        Height: =125
         Width: =1366
         ZIndex: =6
 
@@ -28,10 +28,10 @@ Header As CanvasComponent:
 
             Icon4 As icon.AddUser:
                 Color: =RGBA(255, 255, 255, 1)
-                Height: =118
+                Height: =100
                 Icon: =Icon.CameraAperture
-                Width: =142
-                Y: =13
+                Width: =100
+                Y: =15
                 ZIndex: =2
 
             lblPageTitle As label:
@@ -42,15 +42,13 @@ Header As CanvasComponent:
                 Size: =20
                 Text: =App.ActiveScreen.Name
                 Width: =486
-                X: =384
-                Y: =58
+                X: =351
+                Y: =40
                 ZIndex: =3
 
             Image1 As image:
-                Height: =127
                 Image: =User().Image
-                Width: =127
-                X: =1230
-                Y: =13
+                X: =1255
+                Y: =17
                 ZIndex: =4
 

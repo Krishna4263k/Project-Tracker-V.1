@@ -239,8 +239,5 @@
         ZIndex: =14
 
     Header_2 As Header:
-        Height: =110
-        Width: =1196
-        X: =73
-        ZIndex: =16
+        ZIndex: =15
 

@@ -8,7 +8,7 @@ Header As CanvasComponent:
 
     Rectangle1 As rectangle:
         Height: =127
-        Width: =1500
+        Width: =1200
         ZIndex: =1
 
     Icon4 As icon.AddUser:
@@ -34,6 +34,6 @@ Header As CanvasComponent:
         Height: =127
         Image: =User().Image
         Width: =105
-        X: =1382
+        X: =1095
         ZIndex: =5
 

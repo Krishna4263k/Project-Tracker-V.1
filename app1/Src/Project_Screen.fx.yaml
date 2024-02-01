@@ -467,10 +467,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Claims"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Project].Lead)
+                Items: =Choices([@Project].LeadGroup)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
-                SearchItems: =Choices(Project.Lead,DataCardValue17.SearchText)
+                SearchItems: =Choices(Project.LeadGroup,DataCardValue17.SearchText)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -532,10 +532,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Claims"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Project].Manager)
+                Items: =Choices([@Project].ManagerGroup)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
-                SearchItems: =Choices(Project.Manager,DataCardValue18.SearchText)
+                SearchItems: =Choices(Project.ManagerGroup,DataCardValue18.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60

@@ -1,0 +1,38 @@
+Header As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =Max(App.Height, App.MinScreenHeight)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Rectangle1 As rectangle:
+        Height: =127
+        Width: =768
+        ZIndex: =1
+
+    Icon4 As icon.AddUser:
+        Height: =114
+        Icon: =Icon.CameraAperture
+        Width: =143
+        ZIndex: =2
+
+    Icon5 As icon.AddUser:
+        Height: =89
+        Icon: =Icon.AddUser
+        Width: =74
+        X: =650
+        Y: =19
+        ZIndex: =3
+
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =57
+        Size: =20
+        Text: ="Text"
+        Width: =422
+        X: =168
+        Y: =28
+        ZIndex: =4
+

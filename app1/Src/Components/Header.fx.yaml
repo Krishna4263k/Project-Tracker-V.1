@@ -13,19 +13,19 @@ Header As CanvasComponent:
 
     Icon4 As icon.AddUser:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =114
+        Height: =118
         Icon: =Icon.CameraAperture
-        Width: =143
+        Width: =142
         ZIndex: =2
 
     lblPageTitle As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =59
+        Height: =55
         Size: =20
-        Text: =""
-        Width: =502
+        Text: =App.ActiveScreen.Name
+        Width: =486
         X: =Icon4.X+Icon4.Width
         Y: =34
         ZIndex: =4
@@ -33,7 +33,7 @@ Header As CanvasComponent:
     Image1 As image:
         Height: =127
         Image: =User().Image
-        Width: =117
-        X: =lblPageTitle.X+lblPageTitle.Width
+        Width: =105
+        X: =647
         ZIndex: =5
 

@@ -1,35 +1,6 @@
 "UserStories_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_3 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1_3 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="User Stories"
-        Width: =Parent.Width
-        ZIndex: =2
-
-    Canvas1_3 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1_3.Y + RectQuickActionBar1_3.Height
-        ZIndex: =3
-
-        DataCard1_3 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
+    Header_4 As Header:
 
     Form2_3 As form:
         DataSource: =UserStories
@@ -37,7 +8,7 @@
         Height: =590
         Width: =1366
         Y: =88
-        ZIndex: =4
+        ZIndex: =2
 
         Title_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -441,19 +412,19 @@
                 Y: =DataCardKey6.Y
                 ZIndex: =4
 
-    Button2_6 As button:
-        Height: =62
-        Text: ="Cancel "
-        Width: =177
-        X: =952
-        Y: =572
-        ZIndex: =6
-
     Button2_7 As button:
         Height: =62
         Text: ="Save"
         Width: =177
         X: =1166
         Y: =572
-        ZIndex: =7
+        ZIndex: =4
+
+    Button2_6 As button:
+        Height: =62
+        Text: ="Cancel "
+        Width: =177
+        X: =972
+        Y: =592
+        ZIndex: =5
 

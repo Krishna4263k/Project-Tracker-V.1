@@ -25,7 +25,7 @@
                 FontColor: =
                 FontSize: =23
                 Height: =61
-                OnSelect: =Navigate(DataCard1_1,ScreenTransition.Fade)
+                OnSelect: =//Navigate(DataCard1_1,ScreenTransition.Fade)
                 Text: ="NEW"
                 Width: =168
                 X: =1168

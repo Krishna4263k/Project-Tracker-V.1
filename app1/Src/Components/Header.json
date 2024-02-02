@@ -820,7 +820,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "Header.Title//App.ActiveScreen.Name",
+                "InvariantScript": "App.ActiveScreen.Name",
                 "Property": "Text",
                 "RuleProviderType": "User"
               },
@@ -832,7 +832,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "App.ActiveScreen.Name",
+                "InvariantScript": "",
                 "Property": "Tooltip",
                 "RuleProviderType": "User"
               },
@@ -1369,7 +1369,7 @@
       "ZIndex",
       "Title"
     ],
-    "LastModifiedTimestamp": "638424591861104782",
+    "LastModifiedTimestamp": "638424592555883123",
     "Name": "Header",
     "Rules": [
       {
@@ -1444,7 +1444,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638424591861104782",
+  "LastModifiedTimestamp": "638424592555883123",
   "Name": "aa7774d5d49c44b38e01c86461ff3798",
   "OverridableProperties": {},
   "Version": "1.0"

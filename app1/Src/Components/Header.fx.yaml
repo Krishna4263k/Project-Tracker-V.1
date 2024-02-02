@@ -41,8 +41,8 @@ Header As CanvasComponent:
                 FontWeight: =FontWeight.Bold
                 Height: =55
                 Size: =20
-                Text: =Header.Title//App.ActiveScreen.Name
-                Tooltip: =App.ActiveScreen.Name
+                Text: =App.ActiveScreen.Name
+                Tooltip: =
                 Width: =495
                 X: =438
                 Y: =13

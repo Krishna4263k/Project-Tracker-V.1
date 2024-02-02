@@ -1,6 +1,7 @@
 "Project_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     Header_6 As Header:
+        Title: =App.ActiveScreen.Name
 
     Form2 As form:
         DataSource: =Project
@@ -21,6 +22,7 @@
             ZIndex: =1
 
             Button2 As button:
+                Height: =70
                 OnSelect: =
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
@@ -32,6 +34,7 @@
                 ZIndex: =1
 
             Button2_1 As button:
+                Height: =70
                 OnSelect: |
                     =SubmitForm(Form2);
                     Navigate(Project_Table_Screen,ScreenTransition.Fade);

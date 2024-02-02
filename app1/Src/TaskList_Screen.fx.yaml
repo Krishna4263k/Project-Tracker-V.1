@@ -418,7 +418,6 @@
                 SearchFields: =["Value"]
                 SearchItems: =Choices(TaskList.Status,DataCardValue26.SearchText)
                 SelectMultiple: =false
-                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30

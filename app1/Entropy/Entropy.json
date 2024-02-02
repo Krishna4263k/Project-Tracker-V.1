@@ -7,7 +7,8 @@
     "Header_8": 11,
     "Header_9": 12,
     "LeftNav": 14,
-    "LeftNav_1": 14
+    "LeftNav_1": 14,
+    "LeftNav_2": 14
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -263,6 +264,7 @@
     "LeadGroup_DataCard1": 238,
     "LeftNav": 344,
     "LeftNav_1": 367,
+    "LeftNav_2": 368,
     "ManagerGroup_DataCard2": 243,
     "MileStone_DataCard1": 335,
     "MileStone_Screen": 147,
@@ -361,7 +363,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/02/2024 15:03:40",
+  "HeaderLastSavedDateTimeUTC": "02/02/2024 15:04:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "bf5785ae-71a1-49d4-b55c-0996463d3b86": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5dcd637865c145df931de436b8d7b0c9\""
@@ -404,9 +406,9 @@
     "button": 9,
     "combobox": 7,
     "datepicker": 8,
-    "fluidGrid": 10,
+    "fluidGrid": 11,
     "form": 5,
-    "gallery": 11,
+    "gallery": 10,
     "groupContainer": 0,
     "icon": 2,
     "image": 4,
@@ -668,6 +670,7 @@
     "LeadGroup_DataCard1": {},
     "LeftNav": {},
     "LeftNav_1": {},
+    "LeftNav_2": {},
     "ManagerGroup_DataCard2": {},
     "MileStone_DataCard1": {},
     "MileStone_Screen": {},
@@ -1048,6 +1051,7 @@
     "LeadGroup_DataCard1": 34,
     "LeftNav": 0,
     "LeftNav_1": 0,
+    "LeftNav_2": 0,
     "ManagerGroup_DataCard2": 39,
     "MileStone_DataCard1": 222,
     "MileStone_Screen": 36,
@@ -1159,7 +1163,7 @@
       "combobox": 15,
       "dataCard": 3,
       "datepicker": 6,
-      "e2e54e7663004b85b9f321b4b9b41154": 1,
+      "e2e54e7663004b85b9f321b4b9b41154": 2,
       "fluidGrid": 3,
       "form": 7,
       "gallery": 4,

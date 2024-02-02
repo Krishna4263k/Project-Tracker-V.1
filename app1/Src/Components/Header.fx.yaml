@@ -55,7 +55,7 @@ Header As CanvasComponent:
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
                 Width: =76
-                X: =1290
+                X: =1275
                 Y: =13
                 ZIndex: =4
 

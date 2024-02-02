@@ -1,36 +1,5 @@
 "'Version History _Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_6 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1_6 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="Version History "
-        Width: =Parent.Width
-        ZIndex: =2
-
-    Canvas1_6 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1_6.Y + RectQuickActionBar1_6.Height
-        ZIndex: =3
-
-        DataCard1_6 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
-
     Form2_6 As form:
         DataSource: =VersionHistory
         DefaultMode: =FormMode.New
@@ -38,6 +7,32 @@
         Width: =1366
         Y: =88
         ZIndex: =4
+
+        DataCard7 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =400
+            Width: =1365
+            X: =1
+            Y: =190
+            ZIndex: =1
+
+            Button2_12 As button:
+                Height: =62
+                Text: ="Cancel "
+                Width: =177
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+            Button2_13 As button:
+                Height: =62
+                Text: ="Save"
+                Width: =177
+                X: =233
+                Y: =40
+                ZIndex: =2
 
         Title_DataCard9 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -240,20 +235,4 @@
                 Wrap: =false
                 Y: =DataCardKey54.Y
                 ZIndex: =4
-
-    Button2_12 As button:
-        Height: =62
-        Text: ="Cancel "
-        Width: =177
-        X: =952
-        Y: =572
-        ZIndex: =6
-
-    Button2_13 As button:
-        Height: =62
-        Text: ="Save"
-        Width: =177
-        X: =1166
-        Y: =572
-        ZIndex: =7
 

@@ -6,7 +6,7 @@
     Form2 As form:
         DataSource: =Project
         DefaultMode: =FormMode.New
-        Height: =590
+        Height: =632
         Width: =1366
         Y: =128
         ZIndex: =2

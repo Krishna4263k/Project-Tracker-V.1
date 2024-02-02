@@ -231,7 +231,7 @@
         FontColor: =
         FontSize: =23
         Height: =61
-        OnSelect: =Navigate(Form2,ScreenTransition.Fade)
+        OnSelect: =Navigate(Project_Screen,ScreenTransition.Fade)
         Text: ="NEW"
         Width: =168
         X: =1155

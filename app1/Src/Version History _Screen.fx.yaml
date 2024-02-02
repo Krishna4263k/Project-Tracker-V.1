@@ -30,8 +30,8 @@
                 Height: =62
                 Text: ="Save"
                 Width: =177
-                X: =233
-                Y: =40
+                X: =60
+                Y: =60
                 ZIndex: =2
 
         Title_DataCard9 As typedDataCard.textualEditCard:

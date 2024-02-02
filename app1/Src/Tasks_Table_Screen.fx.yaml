@@ -1,26 +1,10 @@
 "Tasks_Table_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_11 As rectangle:
-        Height: =88
-        Width: =1028
-        X: =172
-        Y: =110
-        ZIndex: =1
-
-    LblAppName1_11 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="Tasks"
-        Width: =1027
-        X: =172
-        Y: =110
-        ZIndex: =2
-
     Canvas1_11 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
-        Y: =RectQuickActionBar1_11.Y + RectQuickActionBar1_11.Height
+        Y: =
         ZIndex: =3
 
         DataCard1_11 As dataCard:
@@ -34,18 +18,6 @@
             X: =0
             Y: =0
             ZIndex: =1
-
-            ButtonCanvas1_3 As Button:
-                BasePaletteColor: =
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                FontSize: =23
-                Height: =61
-                Text: ="NEW"
-                Width: =168
-                X: =1168
-                Y: =18
-                ZIndex: =1
 
             Icon2_3 As icon.Add:
                 Color: =RGBA(255, 255, 255, 1)
@@ -165,7 +137,7 @@
             Text: ="Need to attach lead group"
             VerticalAlign: =VerticalAlign.Top
             Width: =144
-            X: =117
+            X: =Title3_18.X+Title3_18.Width
             Y: =2
             ZIndex: =3
 
@@ -180,7 +152,7 @@
             Text: =ThisItem.Description
             VerticalAlign: =VerticalAlign.Top
             Width: =126
-            X: =261
+            X: =Title3_19.X+Title3_19.Width
             ZIndex: =4
 
         Title3_21 As label:
@@ -194,7 +166,7 @@
             Text: =ThisItem.StartDate
             VerticalAlign: =VerticalAlign.Top
             Width: =131
-            X: =387
+            X: =Title3_20.X+Title3_20.Width
             Y: =2
             ZIndex: =5
 
@@ -209,7 +181,7 @@
             Text: =ThisItem.EndDate
             VerticalAlign: =VerticalAlign.Top
             Width: =134
-            X: =518
+            X: =Title3_21.X+Title3_21.Width
             ZIndex: =6
 
         Icon1_3 As icon.View:
@@ -217,8 +189,7 @@
             Icon: =Icon.View
             OnSelect: =Select(Parent)
             Width: =35
-            X: =1217
-            Y: =2
+            X: =1215
             ZIndex: =8
 
         Title3_26 As label:
@@ -232,7 +203,7 @@
             Text: =ThisItem.Status.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =134
-            X: =652
+            X: =Title3_22.X+Title3_22.Width
             ZIndex: =9
 
         Title3_27 As label:
@@ -246,10 +217,11 @@
             Text: =ThisItem.Priority.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =134
-            X: =786
+            X: =Title3_26.X+Title3_26.Width
             ZIndex: =10
 
         Title3_28 As label:
+            Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =30
             OnSelect: =Select(Parent)
@@ -260,10 +232,11 @@
             Text: =ThisItem.TaskType.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =134
-            X: =909
+            X: =Title3_27.X+Title3_27.Width
             ZIndex: =11
 
         Title3_29 As label:
+            Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =39
             OnSelect: =Select(Parent)
@@ -274,9 +247,16 @@
             Text: =ThisItem.Comments
             VerticalAlign: =VerticalAlign.Top
             Width: =133
-            X: =1043
+            X: =Title3_28.X+Title3_28.Width
             Y: =7
             ZIndex: =12
+
+        Label3 As label:
+            OnSelect: =Select(Parent)
+            Text: =
+            Width: =130
+            X: =Title3_29.X+Title3_29.Width
+            ZIndex: =13
 
     Label2_21 As label:
         Align: =Align.Center
@@ -324,6 +304,15 @@
 
     Header_5 As Header:
         Height: =110
-        X: =316
         ZIndex: =18
+
+    Button8 As button:
+        Height: =55
+        OnSelect: =Navigate(TaskList_Screen)
+        Size: =23
+        Text: ="+ NEW"
+        Width: =177
+        X: =1170
+        Y: =141
+        ZIndex: =19
 

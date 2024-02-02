@@ -2,12 +2,7 @@
 
     Header_2 As Header:
         Title: ="Project Table"
-
-    RectQuickActionBar1_7 As rectangle:
-        Height: =88
-        Width: =1345
-        Y: =110
-        ZIndex: =2
+        Width: =1366
 
     LblAppName1_7 As label:
         Align: =Align.Center
@@ -16,7 +11,7 @@
         Width: =1027
         X: =172
         Y: =110
-        ZIndex: =3
+        ZIndex: =2
 
     Label1 As label:
         Height: =0
@@ -24,88 +19,88 @@
         Width: =190
         X: =190
         Y: =266
-        ZIndex: =5
+        ZIndex: =3
 
     lblTitle As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(40, 112, 134, 1)
-        Height: =70
+        Height: =64
         Text: ="Title"
         Width: =213
-        Y: =186
-        ZIndex: =6
+        Y: =215
+        ZIndex: =4
 
     Label2_1 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(40, 112, 134, 1)
-        Height: =70
+        Height: =64
         Text: ="Status"
         Width: =225
         X: =203
-        Y: =186
-        ZIndex: =7
+        Y: =215
+        ZIndex: =5
 
     Label2_2 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(40, 112, 134, 1)
-        Height: =70
+        Height: =64
         Text: ="Start Date"
         Width: =225
         X: =394
-        Y: =186
-        ZIndex: =8
+        Y: =215
+        ZIndex: =6
 
     Label2_3 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(40, 112, 134, 1)
-        Height: =70
+        Height: =64
         Text: ="Estimated End Date"
         Width: =280
         X: =594
-        Y: =186
-        ZIndex: =9
+        Y: =215
+        ZIndex: =7
 
     Label2_5 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(40, 112, 134, 1)
-        Height: =70
+        Height: =64
         Text: ="Progress"
         Width: =246
         X: =874
-        Y: =186
-        ZIndex: =10
+        Y: =215
+        ZIndex: =8
 
     Label2_6 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(40, 112, 134, 1)
-        Height: =70
+        Height: =64
         Text: ="View"
-        Width: =225
+        Width: =246
         X: =1120
-        Y: =186
-        ZIndex: =11
+        Y: =215
+        ZIndex: =9
 
     "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =275
+        Height: =255
         Items: =Project
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =1327
+        TemplateSize: =1359
         Width: =1366
-        Y: =266
-        ZIndex: =12
+        Y: =286
+        ZIndex: =10
 
         Title3 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -113,15 +108,14 @@
             PaddingTop: =0
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
-            Width: =197
-            X: =26
+            Width: =190
             Y: =
             ZIndex: =2
 
         Title3_1 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -129,14 +123,14 @@
             PaddingTop: =0
             Text: =ThisItem.Description
             VerticalAlign: =VerticalAlign.Top
-            Width: =201
-            X: =223
+            Width: =209
+            X: =Title3.X+Title3.Width
             ZIndex: =3
 
         Title3_2 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =29
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -144,14 +138,14 @@
             PaddingTop: =0
             Text: =ThisItem.StratDate
             VerticalAlign: =VerticalAlign.Top
-            Width: =201
-            X: =424
+            Width: =207
+            X: =Title3_1.X+Title3_1.Width
             ZIndex: =4
 
         Title3_3 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =29
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -159,14 +153,14 @@
             PaddingTop: =0
             Text: =ThisItem.EndDate
             VerticalAlign: =VerticalAlign.Top
-            Width: =201
-            X: =625
+            Width: =264
+            X: =Title3_2.X+Title3_2.Width
             ZIndex: =5
 
         Title3_4 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =38
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -174,49 +168,34 @@
             PaddingTop: =0
             Text: =ThisItem.Status.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =201
-            X: =826
+            Width: =247
+            X: =Title3_3.X+Title3_3.Width
+            Y: =4
             ZIndex: =6
 
-        Title3_5 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =46
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =
-            VerticalAlign: =VerticalAlign.Top
-            Width: =201
-            X: =999
-            ZIndex: =7
-
         Icon1 As icon.View:
-            Height: =44
+            Height: =42
             Icon: =Icon.View
             OnSelect: =Select(Parent)
-            Width: =34
-            X: =1082
+            Width: =36
+            X: =1217
+            Y: =8
             ZIndex: =8
 
-    ButtonCanvas1 As Button:
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        FontSize: =23
-        Height: =61
-        OnSelect: =Navigate(Project_Screen,ScreenTransition.Fade)
-        Text: ="NEW"
-        Width: =168
-        X: =1155
-        Y: =123
-        ZIndex: =13
+        Label2 As label:
+            Height: =50
+            OnSelect: =Select(Parent)
+            Text: =
+            Width: =202
+            X: =Title3_4.X+Title3_4.Width
+            Y: =4
+            ZIndex: =9
 
-    Icon5 As icon.Reload:
-        Icon: =Icon.Reload
-        OnSelect: =Refresh(Project);
-        X: =1226
-        Y: =626
-        ZIndex: =14
+    Button4 As button:
+        Height: =57
+        OnSelect: =Navigate(Project_Screen,ScreenTransition.Fade)
+        Text: ="+ NEW"
+        X: =1188
+        Y: =140
+        ZIndex: =12
 

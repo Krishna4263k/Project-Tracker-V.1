@@ -443,6 +443,7 @@
 
     Button2_6 As button:
         Height: =62
+        OnSelect: =Navigate(UserStories_Table_Screen)
         Text: ="Cancel "
         Width: =177
         X: =952

@@ -439,6 +439,7 @@
 
     Button2_3 As button:
         Height: =62
+        OnSelect: =Navigate(MileStone_Table_Screen)
         Text: ="Cancel "
         Width: =177
         X: =969

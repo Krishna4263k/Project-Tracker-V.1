@@ -1,27 +1,11 @@
 "UserStories_Table_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_10 As rectangle:
-        Height: =88
-        Width: =1028
-        X: =172
-        Y: =110
-        ZIndex: =1
-
-    LblAppName1_10 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="User Stories "
-        Width: =1344
-        X: =14
-        Y: =110
-        ZIndex: =2
-
     Canvas1_10 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =
         Width: =Parent.Width
         X: =Label2_14.X+Label2_14.Width
-        Y: =RectQuickActionBar1_10.Y + RectQuickActionBar1_10.Height
+        Y: =
         ZIndex: =3
 
         DataCard1_10 As dataCard:
@@ -132,13 +116,13 @@
 
     "Gallery3_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =303
+        Height: =408
         Items: =UserStories
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =1200
-        Width: =1200
-        Y: =361
+        TemplateSize: =1195
+        Width: =1283
+        Y: =360
         ZIndex: =13
 
         Title3_12 As label:
@@ -168,7 +152,7 @@
             Text: =ThisItem.Description
             VerticalAlign: =VerticalAlign.Top
             Width: =166
-            X: =167
+            X: =Title3_12.X+Title3_12.Width
             Y: =5
             ZIndex: =3
 
@@ -184,7 +168,7 @@
             Text: =ThisItem.Status.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =169
-            X: =506
+            X: =Title3_25.X+Title3_25.Width
             Y: =5
             ZIndex: =5
 
@@ -200,7 +184,7 @@
             Text: =ThisItem.Comments
             VerticalAlign: =VerticalAlign.Top
             Width: =171
-            X: =675
+            X: =Title3_15.X+Title3_15.Width
             Y: =5
             ZIndex: =6
 
@@ -214,8 +198,8 @@
             PaddingTop: =0
             Text: =
             VerticalAlign: =VerticalAlign.Top
-            Width: =201
-            X: =999
+            Width: =183
+            X: =Title3_24.X+Title3_24.Width
             ZIndex: =7
 
         Icon1_2 As icon.View:
@@ -238,7 +222,7 @@
             Text: =ThisItem.MileStone.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =171
-            X: =857
+            X: =Title3_16.X+Title3_16.Width
             Y: =1
             ZIndex: =9
 
@@ -254,7 +238,7 @@
             Text: =ThisItem.AssignedTo.DisplayName
             VerticalAlign: =VerticalAlign.Top
             Width: =169
-            X: =337
+            X: =Title3_13.X+Title3_13.Width
             Y: =5
             ZIndex: =10
 
@@ -269,14 +253,6 @@
         Y: =306
         ZIndex: =15
 
-    Button1 As button:
-        Height: =64
-        Text: ="New"
-        Width: =139
-        X: =1200
-        Y: =226
-        ZIndex: =16
-
     Icon3 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Add
@@ -286,8 +262,17 @@
         ZIndex: =17
 
     Header_4 As Header:
-        Height: =122
-        Width: =753
-        X: =247
+        Height: =149
+        Width: =1366
         ZIndex: =18
+
+    Button7 As button:
+        Height: =57
+        OnSelect: =Navigate(UserStories_Screen)
+        Size: =23
+        Text: ="+ NEW"
+        Width: =185
+        X: =1162
+        Y: =149
+        ZIndex: =19
 

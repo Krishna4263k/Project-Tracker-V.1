@@ -1,26 +1,10 @@
 "MileStone_Table_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_9 As rectangle:
-        Height: =88
-        Width: =1028
-        X: =172
-        Y: =110
-        ZIndex: =1
-
-    LblAppName1_9 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="Mile Stone"
-        Width: =1027
-        X: =169
-        Y: =110
-        ZIndex: =2
-
     Canvas1_9 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
-        Y: =RectQuickActionBar1_9.Y + RectQuickActionBar1_9.Height
+        Y: =
         ZIndex: =3
 
         DataCard1_9 As dataCard:
@@ -41,6 +25,7 @@
                 FontColor: =
                 FontSize: =23
                 Height: =61
+                OnSelect: =Navigate(DataCard1_1,ScreenTransition.Fade)
                 Text: ="NEW"
                 Width: =168
                 X: =1168
@@ -131,13 +116,13 @@
 
     "Gallery3_1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =303
+        Height: =323
         Items: =MileStone
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =1200
         Width: =1200
-        Y: =377
+        Y: =357
         ZIndex: =13
 
         Title3_6 As label:
@@ -167,7 +152,7 @@
             Text: =ThisItem.Description
             VerticalAlign: =VerticalAlign.Top
             Width: =201
-            X: =197
+            X: =Title3_6.X+Title3_6.Width
             ZIndex: =3
 
         Title3_8 As label:
@@ -182,7 +167,7 @@
             Text: =ThisItem.StartDate
             VerticalAlign: =VerticalAlign.Top
             Width: =201
-            X: =398
+            X: =Title3_7.X+Title3_7.Width
             ZIndex: =4
 
         Title3_9 As label:
@@ -197,7 +182,7 @@
             Text: =ThisItem.EndDate
             VerticalAlign: =VerticalAlign.Top
             Width: =201
-            X: =599
+            X: =Title3_8.X+Title3_8.Width
             ZIndex: =5
 
         Title3_10 As label:
@@ -212,7 +197,7 @@
             Text: =ThisItem.Statue.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =201
-            X: =800
+            X: =Title3_9.X+Title3_9.Width
             ZIndex: =6
 
         Title3_11 As label:
@@ -226,7 +211,7 @@
             Text: =
             VerticalAlign: =VerticalAlign.Top
             Width: =201
-            X: =999
+            X: =Title3_10.X+Title3_10.Width
             ZIndex: =7
 
         Icon1_1 As icon.View:
@@ -238,9 +223,18 @@
             ZIndex: =8
 
     Header_3 As Header:
-        Height: =121
-        Width: =1203
-        X: =83
+        Height: =123
+        Width: =1366
         Y: =2
         ZIndex: =14
+
+    Button5 As button:
+        Height: =62
+        OnSelect: =Navigate(MileStone_Screen)
+        Size: =21
+        Text: ="+ NEW"
+        Width: =142
+        X: =1200
+        Y: =146
+        ZIndex: =15
 

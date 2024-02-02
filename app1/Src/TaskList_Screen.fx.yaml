@@ -705,6 +705,7 @@
 
     Button2_5 As button:
         Height: =62
+        OnSelect: =Navigate(Tasks_Table_Screen)
         Text: ="Cancel "
         Width: =177
         X: =952

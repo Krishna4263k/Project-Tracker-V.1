@@ -1,10 +1,13 @@
 "Project_Table_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
+    Header_2 As Header:
+        Title: ="Project Table"
+
     RectQuickActionBar1_7 As rectangle:
         Height: =88
         Width: =1345
         Y: =110
-        ZIndex: =1
+        ZIndex: =2
 
     LblAppName1_7 As label:
         Align: =Align.Center
@@ -13,14 +16,14 @@
         Width: =1027
         X: =172
         Y: =110
-        ZIndex: =2
+        ZIndex: =3
 
     Canvas1_7 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         Y: =RectQuickActionBar1_7.Y + RectQuickActionBar1_7.Height
-        ZIndex: =3
+        ZIndex: =4
 
         DataCard1_7 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -49,7 +52,7 @@
         Width: =190
         X: =190
         Y: =266
-        ZIndex: =4
+        ZIndex: =5
 
     lblTitle As label:
         Align: =Align.Center
@@ -59,7 +62,7 @@
         Text: ="Title"
         Width: =213
         Y: =186
-        ZIndex: =5
+        ZIndex: =6
 
     Label2_1 As label:
         Align: =Align.Center
@@ -70,7 +73,7 @@
         Width: =225
         X: =203
         Y: =186
-        ZIndex: =6
+        ZIndex: =7
 
     Label2_2 As label:
         Align: =Align.Center
@@ -81,7 +84,7 @@
         Width: =225
         X: =394
         Y: =186
-        ZIndex: =7
+        ZIndex: =8
 
     Label2_3 As label:
         Align: =Align.Center
@@ -92,7 +95,7 @@
         Width: =280
         X: =594
         Y: =186
-        ZIndex: =8
+        ZIndex: =9
 
     Label2_5 As label:
         Align: =Align.Center
@@ -125,7 +128,7 @@
         TemplateSize: =1327
         Width: =1366
         Y: =266
-        ZIndex: =13
+        ZIndex: =12
 
         Title3 As label:
             Align: =Align.Center
@@ -236,9 +239,12 @@
         Width: =168
         X: =1155
         Y: =123
-        ZIndex: =14
+        ZIndex: =13
 
-    Header_2 As Header:
-        Title: ="Project Table"
-        ZIndex: =15
+    Icon5 As icon.Reload:
+        Icon: =Icon.Reload
+        OnSelect: =Refresh(Project);
+        X: =1226
+        Y: =626
+        ZIndex: =14
 

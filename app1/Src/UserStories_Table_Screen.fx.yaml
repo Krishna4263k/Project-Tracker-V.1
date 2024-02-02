@@ -285,9 +285,3 @@
         Y: =226
         ZIndex: =17
 
-    Header_4 As Header:
-        Height: =122
-        Width: =753
-        X: =247
-        ZIndex: =18
-

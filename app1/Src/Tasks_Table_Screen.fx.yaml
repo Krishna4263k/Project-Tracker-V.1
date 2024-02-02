@@ -322,8 +322,3 @@
         Y: =306
         ZIndex: =17
 
-    Header_5 As Header:
-        Height: =110
-        X: =316
-        ZIndex: =18
-

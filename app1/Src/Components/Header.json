@@ -449,10 +449,38 @@
               "BorderStyle",
               "DisplayMode",
               "ZIndex",
-              "RadiusTopLeft",
-              "RadiusTopRight",
-              "RadiusBottomLeft",
-              "RadiusBottomRight",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusTopLeft",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusTopRight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusBottomLeft",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusBottomRight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "BorderThickness",
               "FocusedBorderThickness",
               "PaddingTop",
@@ -592,25 +620,25 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0",
+                "InvariantScript": "50",
                 "Property": "RadiusTopLeft",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0",
+                "InvariantScript": "50",
                 "Property": "RadiusTopRight",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0",
+                "InvariantScript": "50",
                 "Property": "RadiusBottomLeft",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0",
+                "InvariantScript": "50",
                 "Property": "RadiusBottomRight",
                 "RuleProviderType": "Unknown"
               },
@@ -1327,7 +1355,7 @@
       "ZIndex",
       "Title"
     ],
-    "LastModifiedTimestamp": "638424550925048537",
+    "LastModifiedTimestamp": "638424583387992713",
     "Name": "Header",
     "Rules": [
       {
@@ -1402,7 +1430,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638424550925048537",
+  "LastModifiedTimestamp": "638424583387992713",
   "Name": "aa7774d5d49c44b38e01c86461ff3798",
   "OverridableProperties": {},
   "Version": "1.0"

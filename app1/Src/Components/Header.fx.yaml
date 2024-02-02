@@ -49,6 +49,10 @@ Header As CanvasComponent:
 
             Image1 As image:
                 Image: =User().Image
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
                 X: =1255
                 Y: =17
                 ZIndex: =4

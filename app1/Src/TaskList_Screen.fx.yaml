@@ -140,7 +140,7 @@
             DataCardValue22 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Email","Email","Picture"]
+                DisplayFields: =["Email","DisplayName","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@TaskList].AssignedTo)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)

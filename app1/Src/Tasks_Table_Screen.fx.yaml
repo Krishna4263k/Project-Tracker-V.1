@@ -238,3 +238,7 @@
         Y: =141
         ZIndex: =19
 
+    LeftNav_1 As LeftNav:
+        Height: =768
+        ZIndex: =20
+

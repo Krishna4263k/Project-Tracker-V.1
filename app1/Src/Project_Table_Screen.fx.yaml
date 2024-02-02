@@ -1,6 +1,6 @@
 "Project_Table_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    Header_2 As Header:
+    Header_2 As aa7774d5d49c44b38e01c86461ff3798:
         Title: ="Project Table"
         Width: =1366
 
@@ -89,6 +89,7 @@
     Button4 As button:
         Height: =57
         OnSelect: =Navigate(Project_Screen,ScreenTransition.Fade)
+        Size: =23
         Text: ="+ NEW"
         X: =1188
         Y: =140

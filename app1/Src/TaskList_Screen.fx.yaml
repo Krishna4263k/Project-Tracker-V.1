@@ -15,7 +15,7 @@
     Form2_2 As form:
         DataSource: =TaskList
         DefaultMode: =FormMode.New
-        Height: =590
+        Height: =655
         Width: =1366
         Y: =88
         ZIndex: =4
@@ -24,26 +24,34 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =125
+            Height: =234
             Width: =1365
-            X: =1
-            Y: =334
+            X: =0
+            Y: =4
             ZIndex: =1
 
             Button2_5 As button:
                 Height: =62
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
                 Text: ="Cancel "
                 Width: =177
-                X: =57
-                Y: =40
+                X: =36
+                Y: =134
                 ZIndex: =1
 
             Button2_4 As button:
                 Height: =62
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
                 Text: ="Save"
                 Width: =177
-                X: =266
-                Y: =40
+                X: =276
+                Y: =134
                 ZIndex: =2
 
         Title_DataCard3 As typedDataCard.textualEditCard:

@@ -41,10 +41,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Project].Lead)
+                Items: =Choices([@Project].LeadGroup)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(Project.Lead,DataCardValue7.SearchText)
+                SearchItems: =Choices(Project.LeadGroup,DataCardValue7.SearchText)
                 SelectMultiple: =false
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName

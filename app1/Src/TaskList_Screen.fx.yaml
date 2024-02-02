@@ -1,12 +1,14 @@
 "TaskList_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
+    Header_3 As Header:
+
     Form2_2 As form:
         DataSource: =TaskList
         DefaultMode: =FormMode.New
         Height: =667
         Width: =1366
         Y: =98
-        ZIndex: =1
+        ZIndex: =2
 
         DataCard2 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
@@ -138,13 +140,14 @@
             DataCardValue22 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                DisplayFields: =["Email","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@TaskList].AssignedTo)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
+                SearchFields: =["Email"]
                 SearchItems: =Choices(TaskList.AssignedTo,DataCardValue22.SearchText)
                 SelectMultiple: =false
+                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -415,6 +418,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =Choices(TaskList.Status,DataCardValue26.SearchText)
                 SelectMultiple: =false
+                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -711,7 +715,4 @@
                 Wrap: =false
                 Y: =DataCardKey30.Y
                 ZIndex: =4
-
-    Header_3 As Header:
-        ZIndex: =2
 

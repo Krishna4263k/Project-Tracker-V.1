@@ -1,43 +1,107 @@
 "'Domain _Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_5 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1_5 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="Domain"
-        Width: =Parent.Width
-        ZIndex: =2
-
-    Canvas1_5 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1_5.Y + RectQuickActionBar1_5.Height
-        ZIndex: =3
-
-        DataCard1_5 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
+    Header_5 As Header:
 
     Form2_5 As form:
         DataSource: =Domain
         DefaultMode: =FormMode.New
-        Height: =590
+        Height: =575
         Width: =1366
-        Y: =88
-        ZIndex: =4
+        Y: =103
+        ZIndex: =2
+
+        Active_DataCard1 As typedDataCard.toggleEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Active"
+            Default: =ThisItem.Active
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Domain],DataSourceInfo.DisplayName,"Active")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue9.Value
+            Width: =1366/2
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                Tooltip: =Parent.DisplayName
+                X: =30
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                ZIndex: =2
+
+            ErrorMessage9 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue9.Y + DataCardValue9.Height
+                ZIndex: =3
+
+            StarVisible9 As label:
+                Align: =Align.Center
+                Height: =DataCardKey9.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey9.Y
+                ZIndex: =4
+
+        DataCard6 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =346
+            Width: =1365
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            Button2_10 As button:
+                Height: =62
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Cancel "
+                Width: =177
+                X: =103
+                Y: =240
+                ZIndex: =1
+
+            Button2_11 As button:
+                Height: =62
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Save"
+                Width: =177
+                X: =363
+                Y: =240
+                ZIndex: =2
 
         Title_DataCard8 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -106,20 +170,4 @@
                 Wrap: =false
                 Y: =DataCardKey50.Y
                 ZIndex: =4
-
-    Button2_10 As button:
-        Height: =62
-        Text: ="Cancel "
-        Width: =177
-        X: =952
-        Y: =572
-        ZIndex: =6
-
-    Button2_11 As button:
-        Height: =62
-        Text: ="Save"
-        Width: =177
-        X: =1166
-        Y: =572
-        ZIndex: =7
 

@@ -22,6 +22,7 @@
 
             Button2_5 As button:
                 Height: =62
+                OnSelect: =ResetForm(Form2_2);
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50

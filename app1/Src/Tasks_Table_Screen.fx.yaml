@@ -41,6 +41,7 @@
                 FontColor: =
                 FontSize: =23
                 Height: =61
+                OnSelect: =
                 Text: ="NEW"
                 Width: =168
                 X: =1168

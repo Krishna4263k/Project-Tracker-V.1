@@ -12,25 +12,6 @@
         Width: =Parent.Width
         ZIndex: =2
 
-    Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1_2.Y + RectQuickActionBar1_2.Height
-        ZIndex: =3
-
-        DataCard1_2 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
-
     Form2_2 As form:
         DataSource: =TaskList
         DefaultMode: =FormMode.New
@@ -38,6 +19,32 @@
         Width: =1366
         Y: =88
         ZIndex: =4
+
+        DataCard2 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =125
+            Width: =1365
+            X: =1
+            Y: =334
+            ZIndex: =1
+
+            Button2_5 As button:
+                Height: =62
+                Text: ="Cancel "
+                Width: =177
+                X: =57
+                Y: =40
+                ZIndex: =1
+
+            Button2_4 As button:
+                Height: =62
+                Text: ="Save"
+                Width: =177
+                X: =266
+                Y: =40
+                ZIndex: =2
 
         Title_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -702,20 +709,4 @@
                 Wrap: =false
                 Y: =DataCardKey30.Y
                 ZIndex: =4
-
-    Button2_5 As button:
-        Height: =62
-        Text: ="Cancel "
-        Width: =177
-        X: =952
-        Y: =572
-        ZIndex: =6
-
-    Button2_4 As button:
-        Height: =62
-        Text: ="Save"
-        Width: =177
-        X: =1166
-        Y: =572
-        ZIndex: =7
 

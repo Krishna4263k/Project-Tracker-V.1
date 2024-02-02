@@ -1,12 +1,73 @@
 "'Account _Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
+    Header_8 As Header:
+
     Form2_7 As form:
         DataSource: =Account
         DefaultMode: =FormMode.New
-        Height: =590
+        Height: =575
         Width: =1366
-        Y: =88
-        ZIndex: =4
+        Y: =103
+        ZIndex: =2
+
+        Active_DataCard2 As typedDataCard.toggleEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Active"
+            Default: =ThisItem.Active
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Account],DataSourceInfo.DisplayName,"Active")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =
+            Required: =false
+            Update: =DataCardValue10.Value
+            Width: =500
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                Tooltip: =Parent.DisplayName
+                X: =30
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                ZIndex: =2
+
+            ErrorMessage10 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue10.Y + DataCardValue10.Height
+                ZIndex: =3
+
+            StarVisible10 As label:
+                Align: =Align.Center
+                Height: =DataCardKey10.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey10.Y
+                ZIndex: =4
 
         DataCard5 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
@@ -49,11 +110,11 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Account],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =131
             MaxLength: =DataSourceInfo([@Account], DataSourceInfo.MaxLength, "Title")
             Required: =false
             Update: =DataCardValue8.Text
-            Width: =455
+            Width: =600
             X: =0
             Y: =0
             ZIndex: =5

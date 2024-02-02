@@ -134,6 +134,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "HomeScreen",
     "Project_Screen",
     "Project_Table_Screen",
     "MileStone_Table_Screen",

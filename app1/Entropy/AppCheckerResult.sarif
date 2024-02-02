@@ -598,19 +598,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Project_Screen.Form2.LeadGroup_DataCard2.DataCardValue17.AccessibleLabel"
+                  "fullyQualifiedName": "Project_Screen.Form2.LeadGroup_DataCard1.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Project_Screen.Form2.LeadGroup_DataCard2.DataCardValue17.AccessibleLabel",
+                  "fullyQualifiedName": "Project_Screen.Form2.LeadGroup_DataCard1.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Project_Screen",
-                "type": "Project_Screen.Form2.LeadGroup_DataCard2.DataCardValue17"
+                "type": "Project_Screen.Form2.LeadGroup_DataCard1.DataCardValue7"
               }
             }
           ],

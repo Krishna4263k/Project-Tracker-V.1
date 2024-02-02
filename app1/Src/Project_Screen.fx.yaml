@@ -1,43 +1,48 @@
 "Project_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="Project"
-        Width: =Parent.Width
-        ZIndex: =2
-
-    Canvas1 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
-        ZIndex: =3
-
-        DataCard1 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
+    Header_6 As Header:
 
     Form2 As form:
         DataSource: =Project
         DefaultMode: =FormMode.New
         Height: =590
         Width: =1366
-        Y: =88
-        ZIndex: =4
+        Y: =128
+        ZIndex: =2
+
+        DataCard1 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =200
+            Width: =1365
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            Button2 As button:
+                OnSelect: =
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Cancel "
+                X: =254
+                Y: =86
+                ZIndex: =1
+
+            Button2_1 As button:
+                OnSelect: |
+                    =SubmitForm(Form2);
+                    Navigate(Project_Table_Screen,ScreenTransition.Fade);
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Save"
+                X: =32
+                Y: =86
+                ZIndex: =2
 
         Title_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -635,23 +640,4 @@
                 Wrap: =false
                 Y: =DataCardKey19.Y
                 ZIndex: =4
-
-    Button2 As button:
-        Height: =62
-        Text: ="Cancel "
-        Width: =177
-        X: =969
-        Y: =455
-        ZIndex: =6
-
-    Button2_1 As button:
-        Height: =62
-        OnSelect: |-
-            =SubmitForm(Form2);
-            Navigate(Project_Table_Screen,ScreenTransition.Fade);
-        Text: ="Save"
-        Width: =177
-        X: =1169
-        Y: =455
-        ZIndex: =7
 

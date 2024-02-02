@@ -12,7 +12,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =278
+            Height: =175
             Width: =1365
             X: =0
             Y: =4
@@ -26,8 +26,8 @@
                 RadiusTopRight: =50
                 Text: ="Cancel "
                 Width: =177
-                X: =36
-                Y: =134
+                X: =33
+                Y: =86
                 ZIndex: =1
 
             Button2_4 As button:
@@ -38,8 +38,8 @@
                 RadiusTopRight: =50
                 Text: ="Save"
                 Width: =177
-                X: =263
-                Y: =134
+                X: =250
+                Y: =86
                 ZIndex: =2
 
         Title_DataCard3 As typedDataCard.textualEditCard:

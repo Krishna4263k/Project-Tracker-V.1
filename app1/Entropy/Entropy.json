@@ -188,7 +188,7 @@
     "Header": 14,
     "Header_1": 4,
     "Header_2": 134,
-    "Header_3": 360,
+    "Header_3": 361,
     "Header_6": 22,
     "HeaderContainer": 6,
     "Host": 3,
@@ -364,7 +364,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/02/2024 08:12:47",
+  "HeaderLastSavedDateTimeUTC": "02/02/2024 08:19:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "bf5785ae-71a1-49d4-b55c-0996463d3b86": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5dcd637865c145df931de436b8d7b0c9\""
@@ -1211,7 +1211,7 @@
     "AnalysisLoadTime": 2.7875567,
     "ControlCount": {
       "1d4be52511904be7988d9b3384382b55": 1,
-      "aa7774d5d49c44b38e01c86461ff3798": 7,
+      "aa7774d5d49c44b38e01c86461ff3798": 8,
       "button": 15,
       "combobox": 15,
       "dataCard": 8,

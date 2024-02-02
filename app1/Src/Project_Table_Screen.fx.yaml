@@ -118,14 +118,13 @@
 
     "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =287
+        Height: =275
         Items: =Project
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =1327
-        Width: =1328
-        X: =10
-        Y: =254
+        Width: =1366
+        Y: =266
         ZIndex: =13
 
         Title3 As label:

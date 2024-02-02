@@ -1648,19 +1648,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery3_3.AccessibleLabel"
+                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery3_3.AccessibleLabel",
+                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tasks_Table_Screen",
-                "type": "Tasks_Table_Screen.Gallery3_3"
+                "type": "Tasks_Table_Screen.Gallery2"
               }
             }
           ],
@@ -1678,19 +1678,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery3_3.TabIndex"
+                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery3_3.TabIndex",
+                  "fullyQualifiedName": "Tasks_Table_Screen.Gallery2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Tasks_Table_Screen",
-                "type": "Tasks_Table_Screen.Gallery3_3"
+                "type": "Tasks_Table_Screen.Gallery2"
               }
             }
           ],

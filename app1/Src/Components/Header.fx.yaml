@@ -4,7 +4,7 @@ Header As CanvasComponent:
     Height: =Max(App.Height, App.MinScreenHeight)
     HomePages: |-
         =Table({NavigateToScreen:HomeScreen})
-    HomeScreen: =HomeScreen
+    HomeScreen: =About
     Title: ="Text"
     VariableHome: =
     Width: =Max(App.Width, App.MinScreenWidth)

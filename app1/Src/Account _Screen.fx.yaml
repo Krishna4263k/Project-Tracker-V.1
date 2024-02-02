@@ -1,36 +1,5 @@
 "'Account _Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_8 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1_8 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="Account "
-        Width: =Parent.Width
-        ZIndex: =2
-
-    Canvas1_8 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1_8.Y + RectQuickActionBar1_8.Height
-        ZIndex: =3
-
-        DataCard1_8 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
-
     Form2_7 As form:
         DataSource: =Account
         DefaultMode: =FormMode.New
@@ -38,6 +7,40 @@
         Width: =1366
         Y: =88
         ZIndex: =4
+
+        DataCard5 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =437
+            Width: =1365
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            Button2_14 As button:
+                Height: =62
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Cancel "
+                Width: =177
+                X: =48
+                Y: =222
+                ZIndex: =1
+
+            Button2_15 As button:
+                Height: =62
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Save"
+                Width: =177
+                X: =294
+                Y: =222
+                ZIndex: =2
 
         Title_DataCard4 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -106,20 +109,4 @@
                 Wrap: =false
                 Y: =DataCardKey8.Y
                 ZIndex: =4
-
-    Button2_14 As button:
-        Height: =62
-        Text: ="Cancel "
-        Width: =177
-        X: =952
-        Y: =572
-        ZIndex: =6
-
-    Button2_15 As button:
-        Height: =62
-        Text: ="Save"
-        Width: =177
-        X: =1166
-        Y: =572
-        ZIndex: =7
 

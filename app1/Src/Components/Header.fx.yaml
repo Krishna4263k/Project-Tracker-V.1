@@ -59,7 +59,7 @@ Header As aa7774d5d49c44b38e01c86461ff3798:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(39, 113, 194, 1)
         Icon: =Icon.Home
-        OnSelect: =Header.DemoHomePage
+        OnSelect: = Navigate(Header.DemoHomePage)
         X: =145
         Y: =16
         ZIndex: =7

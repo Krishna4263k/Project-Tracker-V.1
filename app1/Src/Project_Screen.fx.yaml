@@ -2,7 +2,7 @@
     OnVisible: =
 
     Header_6 As Header:
-        HomeScreen: =HomeScreen
+        HomeScreen: =
         Title: =App.ActiveScreen.Name
 
     Form2 As form:

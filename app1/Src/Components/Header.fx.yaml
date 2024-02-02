@@ -42,6 +42,7 @@ Header As CanvasComponent:
                 Height: =55
                 Size: =20
                 Text: =Header.Title//App.ActiveScreen.Name
+                Tooltip: =App.ActiveScreen.Name
                 Width: =495
                 X: =438
                 Y: =13

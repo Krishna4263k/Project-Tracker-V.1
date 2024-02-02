@@ -6,7 +6,7 @@
         Height: =667
         Width: =1366
         Y: =98
-        ZIndex: =4
+        ZIndex: =1
 
         DataCard2 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
@@ -713,5 +713,5 @@
                 ZIndex: =4
 
     Header_3 As Header:
-        ZIndex: =5
+        ZIndex: =2
 

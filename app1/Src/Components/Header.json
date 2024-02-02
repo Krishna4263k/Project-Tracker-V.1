@@ -786,7 +786,15 @@
               "PaddingTop",
               "PaddingRight",
               "PaddingBottom",
-              "PaddingLeft"
+              "PaddingLeft",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "\"\"",
+                "InvariantPropertyName": "Tooltip",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              }
             ],
             "ControlUniqueId": "19",
             "HasDynamicProperties": false,
@@ -821,6 +829,12 @@
                 "InvariantScript": "Live.Off",
                 "Property": "Live",
                 "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Data",
+                "InvariantScript": "App.ActiveScreen.Name",
+                "Property": "Tooltip",
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
@@ -1355,7 +1369,7 @@
       "ZIndex",
       "Title"
     ],
-    "LastModifiedTimestamp": "638424588305805683",
+    "LastModifiedTimestamp": "638424591861104782",
     "Name": "Header",
     "Rules": [
       {
@@ -1430,7 +1444,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638424588305805683",
+  "LastModifiedTimestamp": "638424591861104782",
   "Name": "aa7774d5d49c44b38e01c86461ff3798",
   "OverridableProperties": {},
   "Version": "1.0"

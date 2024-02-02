@@ -1,6 +1,8 @@
 "Project_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: =
 
     Header_6 As Header:
+        HomeScreen: =HomeScreen
         Title: =App.ActiveScreen.Name
 
     Form2 As form:

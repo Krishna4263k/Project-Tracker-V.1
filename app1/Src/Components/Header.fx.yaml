@@ -1,6 +1,7 @@
 Header As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =Max(App.Height, App.MinScreenHeight)
+    HomeScreen: =App.ActiveScreen
     Title: ="Text"
     Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
@@ -30,6 +31,7 @@ Header As CanvasComponent:
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =75
                 Icon: =Icon.CameraAperture
+                OnSelect: =Navigate(Header.HomeScreen)
                 Width: =99
                 X: =17
                 Y: =13

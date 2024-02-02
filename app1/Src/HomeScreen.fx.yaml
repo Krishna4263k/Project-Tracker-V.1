@@ -3,3 +3,11 @@
     Header_9 As Header:
         Title: ="Project Tracker"
 
+    Button1 As button:
+        Height: =115
+        OnSelect: =Navigate(Project_Screen)
+        Text: ="New request"
+        X: =1086
+        Y: =120
+        ZIndex: =2
+

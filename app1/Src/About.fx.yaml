@@ -1,0 +1,16 @@
+About As screen:
+
+    Rectangle4 As rectangle:
+        Height: =140
+        Width: =460
+        X: =354
+        Y: =80
+        ZIndex: =1
+
+    Label4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="AboutPage"
+        X: =475
+        Y: =130
+        ZIndex: =2
+

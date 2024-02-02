@@ -1,6 +1,7 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: =
+    OnStart: =Set(btnctrl,true)
+    StartScreen: =
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

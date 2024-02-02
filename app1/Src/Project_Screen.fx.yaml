@@ -29,8 +29,8 @@
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
                 Text: ="Cancel "
-                X: =254
-                Y: =86
+                X: =267
+                Y: =118
                 ZIndex: =1
 
             Button2_1 As button:
@@ -43,8 +43,8 @@
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
                 Text: ="Save"
-                X: =32
-                Y: =86
+                X: =28
+                Y: =118
                 ZIndex: =2
 
         Title_DataCard2 As typedDataCard.textualEditCard:

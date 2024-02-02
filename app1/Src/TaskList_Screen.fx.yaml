@@ -1,43 +1,53 @@
 "TaskList_Screen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1_2 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1_2 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="TaskList"
-        Width: =Parent.Width
-        ZIndex: =2
-
-    Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1_2.Y + RectQuickActionBar1_2.Height
-        ZIndex: =3
-
-        DataCard1_2 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
+    Header_3 As Header:
 
     Form2_2 As form:
         DataSource: =TaskList
         DefaultMode: =FormMode.New
-        Height: =590
+        Height: =667
         Width: =1366
-        Y: =88
-        ZIndex: =4
+        Y: =98
+        ZIndex: =2
+
+        DataCard2 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =142
+            Width: =1365
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            Button2_5 As button:
+                Height: =62
+                OnSelect: =ResetForm(Form2_2);
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Cancel "
+                Width: =177
+                X: =23
+                Y: =66
+                ZIndex: =1
+
+            Button2_4 As button:
+                Height: =62
+                OnSelect: |-
+                    =SubmitForm(Form2_2);
+                    ResetForm(Form2_2);
+                    Navigate(Tasks_Table_Screen,ScreenTransition.Fade)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Text: ="Save"
+                Width: =177
+                X: =246
+                Y: =66
+                ZIndex: =2
 
         Title_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -114,12 +124,12 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@TaskList],DataSourceInfo.DisplayName,"AssignedTo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =136
             Required: =false
             Update: =DataCardValue22.Selected
             Width: =455
-            X: =1
-            Y: =0
+            X: =0
+            Y: =1
             ZIndex: =5
 
             DataCardKey22 As label:
@@ -129,23 +139,24 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =17
                 ZIndex: =1
 
             DataCardValue22 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                DisplayFields: =["Email","DisplayName","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@TaskList].AssignedTo)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
+                SearchFields: =["Email"]
                 SearchItems: =Choices(TaskList.AssignedTo,DataCardValue22.SearchText)
                 SelectMultiple: =false
+                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey22.Y + DataCardKey22.Height + 5
+                Y: =51
                 ZIndex: =2
 
             ErrorMessage22 As label:
@@ -180,12 +191,12 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@TaskList],DataSourceInfo.DisplayName,"Description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =131
             MaxLength: =DataSourceInfo([@TaskList], DataSourceInfo.MaxLength, "Description")
             Required: =false
             Update: =DataCardValue23.Text
-            Width: =455
-            X: =2
+            Width: =910
+            X: =1
             Y: =0
             ZIndex: =5
 
@@ -204,7 +215,9 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =75
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -252,7 +265,7 @@
             Required: =false
             Update: =DataCardValue24.SelectedDate
             Width: =455
-            X: =0
+            X: =1
             Y: =1
             ZIndex: =5
 
@@ -271,6 +284,8 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                InputTextPlaceholder: |
+                    =
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -317,7 +332,7 @@
             Required: =false
             Update: =DataCardValue25.SelectedDate
             Width: =455
-            X: =1
+            X: =2
             Y: =1
             ZIndex: =5
 
@@ -336,6 +351,8 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                InputTextPlaceholder: |
+                    =
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -382,8 +399,8 @@
             Required: =false
             Update: =DataCardValue26.Selected
             Width: =455
-            X: =2
-            Y: =1
+            X: =0
+            Y: =2
             ZIndex: =5
 
             DataCardKey26 As label:
@@ -448,7 +465,7 @@
             Required: =false
             Update: =DataCardValue27.Selected
             Width: =455
-            X: =0
+            X: =1
             Y: =2
             ZIndex: =5
 
@@ -514,7 +531,7 @@
             Required: =false
             Update: =DataCardValue28.Selected
             Width: =455
-            X: =1
+            X: =2
             Y: =2
             ZIndex: =5
 
@@ -576,13 +593,13 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@TaskList],DataSourceInfo.DisplayName,"Comments")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =148
             MaxLength: =DataSourceInfo([@TaskList], DataSourceInfo.MaxLength, "Comments")
             Required: =false
             Update: =DataCardValue29.Text
-            Width: =455
-            X: =2
-            Y: =2
+            Width: =910
+            X: =1
+            Y: =3
             ZIndex: =5
 
             DataCardKey29 As label:
@@ -600,6 +617,7 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =80
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -609,7 +627,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey29.Y + DataCardKey29.Height + 5
+                Y: =44
                 ZIndex: =2
 
             ErrorMessage29 As label:
@@ -702,21 +720,4 @@
                 Wrap: =false
                 Y: =DataCardKey30.Y
                 ZIndex: =4
-
-    Button2_5 As button:
-        Height: =62
-        OnSelect: =Navigate(Tasks_Table_Screen)
-        Text: ="Cancel "
-        Width: =177
-        X: =952
-        Y: =572
-        ZIndex: =6
-
-    Button2_4 As button:
-        Height: =62
-        Text: ="Save"
-        Width: =177
-        X: =1166
-        Y: =572
-        ZIndex: =7
 

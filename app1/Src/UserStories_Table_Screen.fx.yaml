@@ -261,11 +261,6 @@
         Y: =226
         ZIndex: =17
 
-    Header_4 As Header:
-        Height: =149
-        Width: =1366
-        ZIndex: =18
-
     Button7 As button:
         Height: =57
         OnSelect: =Navigate(UserStories_Screen)

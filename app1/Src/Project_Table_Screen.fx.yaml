@@ -86,111 +86,6 @@
         Y: =215
         ZIndex: =9
 
-    "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =255
-        Items: =Project
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =1359
-        Width: =1366
-        Y: =286
-        ZIndex: =10
-
-        Title3 As label:
-            Align: =Align.Center
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =42
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Title
-            VerticalAlign: =VerticalAlign.Top
-            Width: =190
-            Y: =
-            ZIndex: =2
-
-        Title3_1 As label:
-            Align: =Align.Center
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =42
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Description
-            VerticalAlign: =VerticalAlign.Top
-            Width: =209
-            X: =Title3.X+Title3.Width
-            ZIndex: =3
-
-        Title3_2 As label:
-            Align: =Align.Center
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =29
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.StratDate
-            VerticalAlign: =VerticalAlign.Top
-            Width: =207
-            X: =Title3_1.X+Title3_1.Width
-            ZIndex: =4
-
-        Title3_3 As label:
-            Align: =Align.Center
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =29
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.EndDate
-            VerticalAlign: =VerticalAlign.Top
-            Width: =264
-            X: =Title3_2.X+Title3_2.Width
-            ZIndex: =5
-
-        Title3_4 As label:
-            Align: =Align.Center
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =38
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Status.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =247
-            X: =Title3_3.X+Title3_3.Width
-            Y: =4
-            ZIndex: =6
-
-        Icon1 As icon.View:
-            Height: =42
-            Icon: =Icon.View
-            OnSelect: =Select(Parent)
-            Width: =36
-            X: =1217
-            Y: =8
-            ZIndex: =8
-
-        Label2 As label:
-            Height: =50
-            OnSelect: =Select(Parent)
-            Text: =
-            Width: =202
-            X: =Title3_4.X+Title3_4.Width
-            Y: =4
-            ZIndex: =9
-
     Button4 As button:
         Height: =57
         OnSelect: =Navigate(Project_Screen,ScreenTransition.Fade)
@@ -198,4 +93,86 @@
         X: =1188
         Y: =140
         ZIndex: =12
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =502
+        Items: =Project
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =71
+        Width: =1366
+        Y: =266
+        ZIndex: =16
+
+        Title1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =103
+            X: =100
+            Y: =9
+            ZIndex: =2
+
+        Subtitle1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Description
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =303
+            Y: =9
+            ZIndex: =3
+
+        Separator1 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle2 As rectangle:
+            Height: =Parent.TemplateHeight - Separator1.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+        Label2 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.StratDate
+            X: =443
+            ZIndex: =7
+
+        Label3 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.EndDate
+            X: =660
+            ZIndex: =8
+
+        Label5 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Status.Value
+            X: =970
+            ZIndex: =10
+
+        Icon6 As icon.View:
+            Height: =33
+            Icon: =Icon.View
+            OnSelect: =Select(Parent)
+            Width: =36
+            X: =1177
+            ZIndex: =11
 
